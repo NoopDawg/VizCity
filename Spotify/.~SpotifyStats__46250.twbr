@@ -1,0 +1,1113 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0621.1547                               -->
+<workbook source-build='2019.2.1 (20192.19.0621.1547)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='StreamingHistory' inline='true' name='federated.1gw4cbz0mvezg017ic8471hfzunr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='StreamingHistory' name='textscan.1ner7hz0xu8shn1f7b2qt0nsnyxy'>
+            <connection class='textscan' directory='/Users/anup/Documents/DataAnalysis/VizCity/Spotify' filename='StreamingHistory.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ner7hz0xu8shn1f7b2qt0nsnyxy' name='StreamingHistory.txt' table='[StreamingHistory#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='datetime' name='endTime' ordinal='1' />
+            <column datatype='string' name='artistName' ordinal='2' />
+            <column datatype='string' name='trackName' ordinal='3' />
+            <column datatype='integer' name='msPlayed' ordinal='4' />
+            <column datatype='integer' name='artistName_counts' ordinal='5' />
+            <column datatype='string' name='genre' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>endTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[endTime]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>endTime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artistName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artistName]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>artistName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trackName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trackName]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>trackName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>msPlayed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[msPlayed]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>msPlayed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artistName_counts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[artistName_counts]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>artistName_counts</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[StreamingHistory.txt]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='TimePlayedMinutes' datatype='real' name='[Calculation_927671213483773952]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([msPlayed]/1000)/60' />
+      </column>
+      <column caption='Time Played' datatype='string' name='[Calculation_927671213484548097]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='STR(INT(SUM([msPlayed]/1000)/3600))&#10;&#10;+ &quot;:&quot; +&#10;&#10;&#10;IF INT(SUM([msPlayed]/1000)%3600/60)&#10;&#10;&lt; 10 THEN &quot;0&quot; ELSE &quot;&quot; END + STR(INT(SUM([msPlayed]/1000)%3600/60))&#10;&#10;+ &quot;:&quot; +&#10;&#10;&#10;IF INT(SUM([msPlayed]/1000) %3600 %60)&#10;&#10;&lt; 10 THEN &quot;0&quot; ELSE &quot;&quot; END + STR(INT(SUM([msPlayed]/1000)%3600 %60))' />
+      </column>
+      <column caption='Index' datatype='integer' name='[Calculation_927671215723401218]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column aggregation='None' datatype='integer' name='[Number of Records (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Number of Records]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Artist Name' datatype='string' name='[artistName]' role='dimension' type='nominal' />
+      <column caption='artistName counts' datatype='integer' name='[artistName_counts]' role='measure' type='quantitative' />
+      <column caption='End Time' datatype='datetime' name='[endTime]' role='dimension' type='ordinal' />
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+      <column caption='Index1' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Ms Played' datatype='integer' name='[msPlayed]' role='measure' type='quantitative' />
+      <column caption='Track Name' datatype='string' name='[trackName]' role='dimension' type='nominal' />
+      <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.466974' measure-ordering='alphabetic' measure-percentage='0.533026' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:genre:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;album rock&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;art rock&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;bass music&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;britpop&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;classical&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;detroit indie&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;epicore&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;glam rock&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;instrumental rock&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;metropopolis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;post-teen pop&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;american 21st century classical&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;australian r&amp;b&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;bristol indie&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;chicago rap&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;deep big room&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;electra&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;g funk&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;indie pop&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;la pop&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;nordic soundtrack&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;uk pop&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;adult standards&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ann arbor indie&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;bachata&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;british jazz&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;chillwave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;desi hip hop&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;electronica&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;garage psych&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;indie shoegaze&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;london indie&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;otacore&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;alternative hip hop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;austindie&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;belgian hip hop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;canadian electropop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;conscious hip hop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;doujin&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;folk&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;hyperpop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;j-pop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;movie tunes&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;retro soul&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;alternative country&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;atl hip hop&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;bebop&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;brooklyn indie&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;colombian pop&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;dfw rap&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;escape room&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;grupera&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;irish singer-songwriter&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;miami hip hop&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;rap&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;afrobeat&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;anti-folk&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;barbadian pop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;british math rock&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;classic j-rock&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;desi pop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;electropop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;garage rock&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;indie soul&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;melbourne indie&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;pony&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ambient&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;australian pop&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;boy band&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;charlottesville indie&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;dancehall&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;edm&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;funk&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;indie garage rock&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;k-pop&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;new orleans funk&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;street punk&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;acid jazz&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;american post-rock&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;australian reggae fusion&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;british contemporary classical&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;chicano rap&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;deep house&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;electro&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;gainesville indie&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;indie poptimism&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;latin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;norwegian indie&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;video game music&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;alternative rock&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;australian hip hop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;big room&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;chamber psych&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;dance pop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;dutch pop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;french indie pop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;indie electropop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;jazz guitar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;nepali pop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;shimmer psych&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;afropop&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;arkansas country&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;baroque&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;british soul&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;classic rock&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;detroit hip hop&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;emo rap&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;gauze pop&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;indietronica&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;melodic rap&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;pop&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;alternative metal&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;australian dance&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;belgian pop&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;canadian folk&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;contemporary country&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;downtempo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;folk-pop&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;idaho indie&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;j-rock&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;nc hip hop&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;romanian rock&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;alternative pop rock&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;australian electropop&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;big band&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;canadian hip hop&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;contemporary jazz&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;dream pop&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;folktronica&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;indie anthem-folk&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;jam band&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;neo mellow&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;rva indie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ambeat&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;australian indie rock&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;boston hip hop&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;channel islands indie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;dance rock&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;east coast hip hop&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;french indietronica&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;indie folk&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;jazz rap&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;new french touch&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;space ambient&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;ambient folk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;australian psych&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;brill building pop&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;chicago indie&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;dark trap&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;edmonton indie&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;future funk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;indie jazz&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;kawaii future bass&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;new rave&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;traditional funk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;alternative dance&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;auckland indie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;bedroom pop&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;bulgarian indie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;columbus ohio indie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;djent&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;experimental pop&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;hip hop&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;italian jazz&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;modern blues&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;rebel blues&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;alabama indie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;art pop&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;baroque pop&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;british soundtrack&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;classic soul&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;detroit house&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;english indie rock&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;german soundtrack&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;indonesian hip hop&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;metal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;popping&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;acoustic pop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;anime&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;australian singer-songwriter&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;british folk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;chillhop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;deep new americana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;electro swing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;gamecore&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;indie quebecois&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;liverpool indie&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;nyc rap&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;alternative r&amp;b&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;australian garage punk&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;big beat&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;chamber pop&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;country rap&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;drift&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;freak folk&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;indie dream pop&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;japanese chillhop&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;neo r&amp;b&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;scorecore&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;alternative emo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;aussietronica&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;bedroom soul&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;canadian contemporary r&amp;b&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;compositional ambient&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;dmv rap&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;filter house&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;hip house&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;j-idol&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;modern rock&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;reggae&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;acoustic punk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;anime score&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;avant-garde jazz&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;british invasion&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;chillstep&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;deep tropical house&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;electronic trap&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;gangster rap&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;indie r&amp;b&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;lo-fi beats&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;orlando indie&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StreamingHistory' name='federated.1gw4cbz0mvezg017ic8471hfzunr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gw4cbz0mvezg017ic8471hfzunr'>
+            <column caption='TimePlayedMinutes' datatype='real' name='[Calculation_927671213483773952]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([msPlayed]/1000)/60' />
+            </column>
+            <column caption='Index' datatype='integer' name='[Calculation_927671215723401218]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Artist Name' datatype='string' name='[artistName]' role='dimension' type='nominal' />
+            <column caption='End Time' datatype='datetime' name='[endTime]' role='dimension' type='ordinal' />
+            <column-instance column='[endTime]' derivation='Month' name='[mn:endTime:ok]' pivot='key' type='ordinal' />
+            <column caption='Ms Played' datatype='integer' name='[msPlayed]' role='measure' type='quantitative' />
+            <column-instance column='[artistName]' derivation='None' name='[none:artistName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_927671213483773952]' derivation='Sum' name='[sum:Calculation_927671213483773952:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[endTime]' derivation='Month-Trunc' name='[tmn:endTime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_927671215723401218]' derivation='User' name='[usr:Calculation_927671215723401218:ok:21]' pivot='key' type='ordinal'>
+              <table-calc level-break='[federated.1gw4cbz0mvezg017ic8471hfzunr].[artistName]' ordering-type='Field'>
+                <order field='[federated.1gw4cbz0mvezg017ic8471hfzunr].[mn:endTime:ok]' />
+                <order field='[federated.1gw4cbz0mvezg017ic8471hfzunr].[artistName]' />
+                <sort direction='DESC' using='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Calculation_927671215723401218]' derivation='User' name='[usr:Calculation_927671215723401218:qk:11]' pivot='key' type='quantitative'>
+              <table-calc level-break='[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:artistName:nk]' ordering-type='Field'>
+                <order field='[federated.1gw4cbz0mvezg017ic8471hfzunr].[mn:endTime:ok]' />
+                <order field='[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:artistName:nk]' />
+                <sort direction='DESC' using='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[usr:Calculation_927671215723401218:qk:11]' included-values='in-range'>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.1gw4cbz0mvezg017ic8471hfzunr].[usr:Calculation_927671215723401218:qk:11]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='total' field='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' value='*' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[mn:endTime:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1gw4cbz0mvezg017ic8471hfzunr].[tmn:endTime:ok] / ([federated.1gw4cbz0mvezg017ic8471hfzunr].[usr:Calculation_927671215723401218:ok:21] / [federated.1gw4cbz0mvezg017ic8471hfzunr].[none:artistName:nk]))</rows>
+        <cols>[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]</cols>
+        <show-full-range>
+          <column>[federated.1gw4cbz0mvezg017ic8471hfzunr].[Number of Records (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D5F28657-3530-47FD-84FB-F4EE82C67760}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StreamingHistory' name='federated.1gw4cbz0mvezg017ic8471hfzunr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gw4cbz0mvezg017ic8471hfzunr'>
+            <column caption='TimePlayedMinutes' datatype='real' name='[Calculation_927671213483773952]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([msPlayed]/1000)/60' />
+            </column>
+            <column caption='Artist Name' datatype='string' name='[artistName]' role='dimension' type='nominal' />
+            <column caption='Ms Played' datatype='integer' name='[msPlayed]' role='measure' type='quantitative' />
+            <column-instance column='[artistName]' derivation='None' name='[none:artistName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_927671213483773952]' derivation='Sum' name='[sum:Calculation_927671213483773952:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]</rows>
+        <cols>[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:artistName:nk]</cols>
+      </table>
+      <simple-id uuid='{27D4DCBC-EFE5-4898-A2D9-C374CE5211DF}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StreamingHistory' name='federated.1gw4cbz0mvezg017ic8471hfzunr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gw4cbz0mvezg017ic8471hfzunr'>
+            <column caption='TimePlayedMinutes' datatype='real' name='[Calculation_927671213483773952]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([msPlayed]/1000)/60' />
+            </column>
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+            <column caption='Ms Played' datatype='integer' name='[msPlayed]' role='measure' type='quantitative' />
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_927671213483773952]' derivation='Sum' name='[sum:Calculation_927671213483773952:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:genre:nk]'>
+            <groupfilter from='&quot;acid jazz&quot;' function='range' level='[none:genre:nk]' to='&quot;video game music&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:genre:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:genre:nk]' />
+              <groupfilter function='member' level='[none:genre:nk]' member='&quot;auckland indie&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:genre:nk]' direction='DESC' using='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' />
+          <filter class='quantitative' column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' included-values='in-range'>
+            <min>200.0</min>
+            <max>6233.9664000000139</max>
+          </filter>
+          <slices>
+            <column>[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:genre:nk]</column>
+            <column>[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[none:genre:nk]' />
+              <wedge-size column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' />
+              <size column='[federated.1gw4cbz0mvezg017ic8471hfzunr].[sum:Calculation_927671213483773952:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8570718765258789' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{102E37B3-151B-4BD7-92B0-5FF5DB3A111D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='8' param='vert' type='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D6F25194-3D5C-4D04-9C69-2FB4E718E8CA}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E56870F-22B2-4A9A-85B0-51CFCA0A59D1}' />
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1gw4cbz0mvezg017ic8471hfzunr].[mn:endTime:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{1E03649A-EDB3-4C42-A29D-B9B0E9406873}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{69D70398-5B42-4B85-A500-A400FDB20139}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{4C32C224-AE95-45A1-B15F-E8B4761CC70B}' />
+    </window>
+  </windows>
+</workbook>
